@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <>
       <div className="w-full h-screen flex items-center justify-center">
-        <div className="h-[80%] w-[50%]">
+        <div className="h-[80%] w-full px-4 sm:w-[80%] md:w-[60%] lg:w-[50%]">
           <div className="text-center flex items-center justify-center flex-col gap-4">
             <Title
               text="Ask Genie"
@@ -21,7 +21,7 @@ export default function HomeSection() {
             />
           </div>
           <div className="mt-10">
-            <SearchComponent/>
+            <SearchComponent />
           </div>
         </div>
       </div>
