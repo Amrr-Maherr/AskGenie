@@ -1,10 +1,12 @@
 import HomeSection from "./Components/HomeSection";
-import Title from "./Components/Title";
+import Nav from "./Components/Nav";
+
 
 
 export default function Home() {
   return (
     <>
+      <Nav/>
       <HomeSection />
     </>
   );
