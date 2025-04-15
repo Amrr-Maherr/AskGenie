@@ -1,6 +1,7 @@
 import SearchComponent from "./SearchComponent";
 import Title from "./Title";
 import Skeleton from "../Components/Skeleton"
+import ButtonLoading from "./ButtonLoading";
 export default function HomeSection() {
   return (
     <>
