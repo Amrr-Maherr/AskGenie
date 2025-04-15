@@ -1,6 +1,6 @@
 import SearchComponent from "./SearchComponent";
 import Title from "./Title";
-
+import Skeleton from "../Components/Skeleton"
 export default function HomeSection() {
   return (
     <>
@@ -22,6 +22,9 @@ export default function HomeSection() {
           </div>
           <div className="mt-10">
             <SearchComponent />
+          </div>
+          <div className="mt-10">
+            
           </div>
         </div>
       </div>
