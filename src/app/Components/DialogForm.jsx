@@ -17,7 +17,7 @@ export default function DialogForm() {
         <DialogTrigger asChild>
           <Button >Login</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] bg-black text-white">
           <DialogHeader>
             <DialogTitle>Login</DialogTitle>
             <DialogDescription>
