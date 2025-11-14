@@ -6,7 +6,7 @@ export default function ButtonLoading() {
       <>
         <Button disabled>
           <Loader2 className="animate-spin" />
-          Please wait
+          Please wait...
         </Button>
       </>
     );

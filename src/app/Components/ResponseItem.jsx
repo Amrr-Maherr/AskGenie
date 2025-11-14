@@ -1,22 +1,24 @@
+import { Copy, Share2, ThumbsUp, ThumbsDown } from "lucide-react";
+import ChatActions from "./ChatActions";
+
 export default function ResponseItem({ item }) {
   return (
     <div className="flex flex-col gap-3 px-2 animate-fadeInUp">
       {/* User Message */}
       <div className="flex justify-end">
-        <div className="bg-blue-500 text-white p-3 rounded-xl rounded-tr-none max-w-[70%] shadow-lg break-words">
+        <div className="text-white p-3 rounded-xl rounded-tr-none max-w-[70%] shadow-lg break-words">
           {item.user}
         </div>
       </div>
 
       {/* AI Message */}
-      <div className="flex justify-start">
-        <div className="bg-gray-800 text-green-400 p-3 rounded-xl rounded-tl-none max-w-[70%] shadow-lg break-words">
+      <div className="flex flex-col gap-1 justify-start">
+        <div className="text-white p-3 rounded-xl rounded-tl-none max-w-[70%] shadow-lg break-words relative">
           {item.bot}
+          {/* Action Icons */}
+          <ChatActions/>
         </div>
       </div>
-
-      {/* Timestamp */}
-      <div className="text-gray-500 text-xs text-right px-1">{item.time}</div>
     </div>
   );
 }

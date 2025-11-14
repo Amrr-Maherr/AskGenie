@@ -5,6 +5,11 @@ export default function useFetchQuery() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+const initialPrompt = `
+You are a friendly AI assistant called Genie. 
+You always reply concisely and helpfully. 
+/ أنت مساعد ذكاء اصطناعي ودود اسمه Genie. دائمًا ترد بإيجاز وبشكل مفيد.
+`;
 
   const fetchData = async (query) => {
     const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDUdEexZL5ih4KDQJ-DFRemMrIQrfPugcI`;
@@ -21,7 +26,7 @@ export default function useFetchQuery() {
               role: "model",
               parts: [
                 {
-                  text: "You are a friendly AI assistant called BrainBox. You always reply concisely and helpfully. / أنت مساعد ذكاء اصطناعي ودود اسمه BrainBox. دائمًا ترد بإيجاز وبشكل مفيد.",
+                  text: initialPrompt,
                 },
               ],
             },
